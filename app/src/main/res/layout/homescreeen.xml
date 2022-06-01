@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FA">
+
+    <RelativeLayout
+        android:id="@+id/roomitem_cardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ST4 Team"
+            android:textColor="#686D73"
+            android:textSize="32dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/power"
+        android:layout_width="140dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/roomitem_cardview"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/turn_on"
+        android:elevation="2dp">
+
+        <ImageButton
+            android:id="@+id/power_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_power_button" />
+
+        <TextView
+            android:id="@+id/power_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="10dp"
+            android:text="Turn On"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/power_room_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="30dp"
+            android:text="All Rooms"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/room_manage_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/power"
+        android:layout_alignRight="@id/gridView"
+        android:layout_alignBottom="@id/power"
+        android:background="@null"
+        android:onClick="imageButtonOnClick"
+        android:tint="#324B61"
+        app:srcCompat="@drawable/ic_settings" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomNavigation"
+        android:layout_below="@+id/power"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        layout="@layout/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

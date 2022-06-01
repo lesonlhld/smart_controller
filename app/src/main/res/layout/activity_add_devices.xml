@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header_add_device"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/add_devices_logo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="220dp"
+        android:layout_height="520dp"
+        android:background="@drawable/shape_left_panel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_add_device" />
+
+    <LinearLayout
+        android:id="@+id/form_add_device"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/shape_form_panel"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:paddingTop="35dp"
+        android:paddingRight="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/header_add_device">
+
+        <EditText
+            android:id="@+id/edit_text_device_id"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/edit_text_border"
+            android:drawableLeft="@drawable/ic_device_id"
+            android:hint="Enter device id"
+            android:popupBackground="#DFFFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_text_device_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/edit_text_border"
+            android:drawableLeft="@drawable/ic_gear"
+            android:hint="Enter device name"
+            android:popupBackground="#DFFFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_add_devices"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/spinner_border"
+            android:overlapAnchor="false"
+            android:popupBackground="#DFFFFFFF"
+            android:spinnerMode="dropdown"
+
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_add_devices2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_add_device_btn"
+        android:text="ADD"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/form_add_device"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finish your work here?"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/text_view_go_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="GO BACK"
+            android:textColor="#fc3d03"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

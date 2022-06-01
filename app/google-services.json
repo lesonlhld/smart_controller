@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "185747134643",
+    "firebase_url": "https://smart-controller-ab851-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "smart-controller-ab851",
+    "storage_bucket": "smart-controller-ab851.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185747134643:android:caf391e4a04dd54e6978c6",
+        "android_client_info": {
+          "package_name": "letrungson.com.smartcontroller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "185747134643-9c49bbmocuv6o0f05i74rmtketiqldm3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCA9d5Wxx4V0A5zV1bSwnzDbebRwZEUm-M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "185747134643-9c49bbmocuv6o0f05i74rmtketiqldm3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
